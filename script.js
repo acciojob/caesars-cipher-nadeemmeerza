@@ -4,10 +4,10 @@
 document.getElementById('btn').addEventListener('click', (e)=>{
 	let value = document.getElementById('input').value;
 	console.log(value);
-	document.getElementById('p').innerText = ROT13(value);
+	document.getElementById('p').innerText = rot13(value);
 })
 
-function ROT13(params) {
+function rot13(params) {
 	let result = "";
 	for(let i=0; i<params.length; i++){
 		let charcode = params.charCodeAt(i);
