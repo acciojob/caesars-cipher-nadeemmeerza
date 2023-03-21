@@ -1,6 +1,4 @@
 // Your Script here.
-
-
 document.getElementById('btn').addEventListener('click', (e)=>{
 	let value = document.getElementById('input').value;
 	console.log(value);
@@ -8,6 +6,8 @@ document.getElementById('btn').addEventListener('click', (e)=>{
 })
 
 function rot13(params) {
+	if(params == "")
+		return;
 	let result = "";
 	for(let i=0; i<params.length; i++){
 		let charcode = params.charCodeAt(i);
